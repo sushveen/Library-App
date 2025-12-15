@@ -1,1 +1,6 @@
 suhana|Physics |3|Applications of GMR|Magnetic memories and sensors
+sushveen|Mechanical |1|What is an isolated system?|A system where no transfer of mass or energy takes place. 
+sushveen|Mechanical |1|What remains constant in an isothermal process? |Temperature 
+sushveen|Mechanical |1|Do intensive properties depend on mass?|No 
+sushveen|Mechanical |2|What is the main alloying element in Ferrous metal alloys? |Carbon
+sushveen|Electrical |1|What is the resistance in a short circuit?|0
