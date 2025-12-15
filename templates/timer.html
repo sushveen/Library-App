@@ -1,14 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
-
 <h2>Study Timer</h2>
-
 <div class="card">
     <p><b>Pomodoro:</b> 25 minutes study · 5 minute break</p>
     <p><b>50–10:</b> Deep focus for longer sessions</p>
     <p><b>Custom:</b> Choose what works for you</p>
 </div>
-
 {% if running %}
     <div class="card">
         <h3>Session in Progress 🌿</h3>
@@ -18,36 +15,28 @@
 
         <a href="/timer"><button>Refresh Status</button></a>
     </div>
-
 {% elif done %}
     <div class="card">
         <h3>Session Complete 🌸</h3>
         <p>Great work. Take a short break.</p>
     </div>
-
 {% else %}
 <form method="POST">
     <label>
         <input type="radio" name="technique" value="pomodoro" required>
         Pomodoro (25 minutes)
     </label><br><br>
-
     <label>
         <input type="radio" name="technique" value="fifty">
         50–10 Technique
     </label><br><br>
-
     <label>
         <input type="radio" name="technique" value="custom">
         Custom
     </label>
-
     <input type="number" name="minutes" min="1" placeholder="Custom minutes">
-
     <button type="submit">Start Study Session</button>
 </form>
 {% endif %}
-
 <a href="/home">Back to Home</a>
-
 {% endblock %}
