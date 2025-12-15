@@ -1,24 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
-
 <h2>Add Resource</h2>
-
 <form method="POST">
     <label>Title</label>
     <input type="text" name="title" required>
-
     <label>Category</label>
     <input type="text" name="category" required>
-
     <label>URL</label>
     <input type="text" name="url" required>
-
     <label>Description</label>
     <textarea name="description" rows="3"></textarea>
-
     <button type="submit">Add Resource</button>
 </form>
-
 <a href="/home">Back to Home</a>
-
 {% endblock %}
