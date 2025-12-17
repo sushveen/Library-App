@@ -109,7 +109,7 @@ def add_resource():
 
 
         with open(RESOURCES_FILE, "a") as f:
-            f.write(f"{session['user']}|{title}|{category}|{url}|{desc}|0\n")
+            f.write(f"{session['user']}|{title}|{category}|{url}|{desc}\n")
 
 
         log_activity(session["user"], f"Added resource {title}")
